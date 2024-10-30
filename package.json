@@ -1,0 +1,41 @@
+{
+  "name": "jen_form",
+  "version": "1.0.0",
+  "description": "generator trading platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generator",
+    "marketplace",
+    "generator",
+    "sales",
+    "generator",
+    "rental",
+    "buy",
+    "generators",
+    "sell",
+    "generators",
+    "rent",
+    "generators",
+    "jeneratör",
+    "pazar yeri",
+    "jeneratör",
+    "satış",
+    "jeneratör",
+    "kiralama",
+    "satın al",
+    "jeneratörler",
+    "sat",
+    "jeneratörler",
+    "kirala",
+    "jeneratörler"
+  ],
+  "author": "kerem.goktug10@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3"
+  }
+}
