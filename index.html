@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jen-Form - Jeneratör Alım Satım Platformu</title>
+    <meta name="description" content="Jeneratör alım satım platformu">
+    <meta name="keywords" content="jeneratör, alım satım, platform">
+    <meta name="author" content="Jen_Form">
+    <!-- main.css -->
+    <link rel="stylesheet" href="../assets/scss/main.css">
+    <!-- Bootstrap CSS Files -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/JenForm_Favicon_Img.png">
+</head>
+
+<body id="bodyJenForm">
+    <div class="index-all-jenform">
+        <header id="headerJenForm">
+            <nav class="navbar-jenForm scrolled fixed-top navbar navbar-dark">
+                <div class="navbar-container-jenForm container-fluid">
+                    <div class="navbar-toggler-jenForm col-4">
+                        <button class="navbar-toggler btn btn-sm" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasMenuJenForm" aria-controls="offcanvasMenuJenForm"
+                            aria-label="Toggle Navigation">
+                            <span><i class="bi bi-list"></i></span>
+                        </button>
+                        <div class="offcanvas-menu-jenForm offcanvas offcanvas-start" tabindex="-1"
+                            id="offcanvasMenuJenForm" aria-labelledby="offcanvasMenuJenFormLabel">
+                            <div class="offcanvas-menu-header-jenForm offcanvas-header">
+                                <h6 class="offcanvas-menu-title-jenForm offcanvas-title" id="offcanvasMenuJenFormLabel">
+                                    <span><i class="bi bi-list"></i></span> Menü
+                                </h6>
+                                <button type="button" class="btn-close rounded-circle" data-bs-dismiss="offcanvas"
+                                    aria-label="Close Menu">
+                                </button>
+                            </div>
+                            <div class="offcanvas-menu-body-jenForm offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">
+                                            <span><i class="bi bi-house-door me-2"></i>Anasayfa</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span><i class="bi bi-journal-bookmark-fill me-2"></i>Hakkımızda</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span><i class="bi bi-at me-2"></i>İletişim</span>
+                                        </a>
+                                    </li>
+                                    <hr class="menu-divider-jenform">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span><i class="bi bi-box-arrow-in-up-right me-2"></i>Al</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span><i class="bi bi-box-arrow-down-left me-2"
+                                                    style="font-size: 14px;"></i>Sat
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span>
+                                                <i class="bi bi-box-arrow-in-down-right me-2"></i>Kiralık Al
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <span>
+                                                <i class="bi bi-box-arrow-up-left me-2"
+                                                    style="font-size: 14px;"></i>Kiralık Ver
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <hr class="menu-divider-jenform">
+                                    <li class="nav-item dropdown-jenForm dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span><i class="bi bi-PlusMinus"></i>Jeneratörler</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-jenForm dropdown-menu-dark">
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Benzinli</a></li>
+                                            <li><a class="dropdown-item" href="#">Dizel</a></li>
+                                            <li><a class="dropdown-item" href="#">LPG & Doğalgazlı</a></li>
+                                            <li>
+                                                <a class="dropdown-item dropdown-item-hepsi" href="#">Hepsi
+                                                    <i class="bi bi-arrow-right-short"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown-jenForm dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span><i class="bi bi-PlusMinus"></i>Motor</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-jenForm dropdown-menu-dark">
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Perkins</a></li>
+                                            <li><a class="dropdown-item" href="#">Baudouin</a></li>
+                                            <li><a class="dropdown-item" href="#">Mitsubishi</a></li>
+                                            <li><a class="dropdown-item" href="#">Cummins</a></li>
+                                            <li><a class="dropdown-item" href="#">Sdec</a></li>
+                                            <li><a class="dropdown-item" href="#">Quanchai</a></li>
+                                            <li><a class="dropdown-item" href="#">Yanmar</a></li>
+                                            <li>
+                                                <a class="dropdown-item dropdown-item-hepsi" href="#">Hepsi
+                                                    <i class="bi bi-arrow-right-short"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown-jenForm dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span><i class="bi bi-PlusMinus"></i>Alternatör</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-jenForm dropdown-menu-dark">
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Linz</a></li>
+                                            <li><a class="dropdown-item" href="#">Stamfordl</a></li>
+                                            <li><a class="dropdown-item" href="#">Nekra</a></li>
+                                            <li>
+                                                <a class="dropdown-item dropdown-item-hepsi" href="#">Hepsi
+                                                    <i class="bi bi-arrow-right-short"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown-jenForm dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span><i class="bi bi-PlusMinus"></i>Solar Sistemler</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-jenForm dropdown-menu-dark">
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Panel</a></li>
+                                            <li><a class="dropdown-item" href="#">İnvertör</a></li>
+                                            <li><a class="dropdown-item" href="#">Solar Akü</a></li>
+                                            <li><a class="dropdown-item" href="#">İzleme ve Kontrol Sistemleri</a></li>
+                                            <li><a class="dropdown-item" href="#">Kablo ve Bağlantı Ekipmanları</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Montaj ve Sabitleme Elemanları</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Güneş Takip Sistemleri</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item dropdown-item-hepsi" href="#">Hepsi
+                                                    <i class="bi bi-arrow-right-short"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown-jenForm dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span><i class="bi bi-PlusMinus"></i>Yedek Parça & Aksesuar</span>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-jenForm dropdown-menu-dark">
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Akü</a></li>
+                                            <li><a class="dropdown-item" href="#">Soğutma Sistemleri</a></li>
+                                            <li><a class="dropdown-item" href="#">Ateşleme Sistemleri</a></li>
+                                            <li><a class="dropdown-item" href="#">Filtreler</a></li>
+                                            <li><a class="dropdown-item" href="#">Elektrik & Elektronik</a></li>
+                                            <li><a class="dropdown-item" href="#">Kontrol Panelleri</a></li>
+                                            <li><a class="dropdown-item" href="#">Gövde</a></li>
+                                            <li><a class="dropdown-item" href="#">Ses Yalıtım Malzemeleri</a></li>
+                                            <li>
+                                                <a class="dropdown-item dropdown-item-hepsi" href="#">Hepsi
+                                                    <i class="bi bi-arrow-right-short"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="form-control form-control-sm me-2 rounded-pill" type="search"
+                                        placeholder="Ara" aria-label="Search">
+                                    <button class="btn btn-sm rounded-circle btn-primary" type="submit">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-brand-jenForm col-4">
+                        <a class="navbar-brand m-0 rounded-3" href="index.html">
+                            <img src="../assets/images/Jen-Form-logo.png" alt="Logo" class="img-fluid brand-jenForm">
+                        </a>
+                    </div>
+                    <div class="auth-buttons-jenForm col-4">
+                        <button class="login-btn-jenForm btn btn-sm d-none d-lg-block" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasLoginJenform"
+                            aria-controls="offcanvasLoginJenform">
+                            Giriş Yap
+                        </button>
+                        <button class="login-btn-icon-jenForm btn btn-sm rounded-circle d-lg-none" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasLoginJenform"
+                            aria-controls="offcanvasLoginJenform" aria-label="Giriş Yap">
+                            <span><i class="bi bi-person-circle"></i></span>
+                        </button>
+                        <div class="offcanvas-login-jenform offcanvas offcanvas-end" tabindex="-1"
+                            id="offcanvasLoginJenform" aria-labelledby="loginJenformLabel">
+                            <div class="offcanvas-login-header-jenform offcanvas-header">
+                                <h6 class="offcanvas-login-title-jenform offcanvas-title" id="loginJenformLabel">
+                                    <span><i class="bi bi-person-circle"></i></span> Giriş Yap
+                                </h6>
+                                <button type="button" class="btn-close rounded-circle" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="offcanvas-login-body-jenform offcanvas-body">
+                                <div class="login-body-jenform row rounded-2">
+                                    <div class="login-body-inline-jenform rounded-1 py-3">
+                                        <div class="login-body-img container col-4">
+                                            <img src="../assets/images/Jen-Form-logo.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="login-form-group-jenform container">
+                                            <div class="form-group">
+                                                <div class="row g-0 mt-1">
+                                                    <div class="form-floating">
+                                                        <input type="email" id="loginEmail" class="form-control"
+                                                            placeholder="E-posta adresi" required>
+                                                        <label for="loginEmail">
+                                                            E-posta adresi
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-floating mt-3">
+                                                        <input type="password" id="loginPassword" class="form-control"
+                                                            placeholder="Şifre" required>
+                                                        <label for="loginPassword">
+                                                            Şifre
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-1">
+                                                    <div class="col-7">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                role="switch" id="loginSwitchCheck" checked>
+                                                            <label class="login-SwitchCheck-label form-check-label me-1"
+                                                                for="loginSwitchCheck">
+                                                                Oturum Açık Kalsın
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a href="#">
+                                                            Şifremi Unuttum
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 d-grid">
+                                                        <button class="btn login-email-btn btn-sm" type="submit">
+                                                            E-Posta ile giriş yap
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-3">
+                                                    <div class="col-7">
+                                                        <span>
+                                                            Henüz hesabın yok mu?
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a href="#">
+                                                            Kaydol<i class="bi bi-caret-right-fill"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="row g-0 mt-4">
+                                                        <div class="col-4">
+                                                            <hr>
+                                                        </div>
+                                                        <div class="col-4 mt-1">
+                                                            <span>VEYA</span>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-3">
+                                                    <div class="col-12 d-grid mt-3">
+                                                        <button class="btn login-social-btn btn-sm" type="button">
+                                                            <img src="../assets/images/logo-google.png"
+                                                                alt="Google Logo" height="18">
+                                                            Google ile giriş yap
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-12 d-grid mt-3">
+                                                        <button class="btn login-social-btn btn-sm" type="button">
+                                                            <img src="../assets/images/logo-apple.png" alt="Apple Logo"
+                                                                height="20">
+                                                            Apple ile giriş yap
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-12 mt-2">
+                                                        <p>
+                                                            Google veya Apple kimliğinizle bir sonraki adıma geçmeniz
+                                                            halinde
+                                                            <a href="">Bireysel Hesap Sözleşmesi ve Ekleri</a>'ni
+                                                            kabul etmiş sayılırsınız.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="logiin-body-footer-jenform row g-0">
+                                    <div class="col-12 ms-2">
+                                        <p>
+                                            Tarafınızca sağlanmış olan kişisel verileriniz hesap açma esnasında kimlik
+                                            doğrulama tercihinize bağlı olarak Google veya Apple vasıtasıyla
+                                            işlenebilecektir. Kişisel verilerin korunması hakkında detaylı bilgiye
+                                            <a href="">buradan</a> ulaşabilirsiniz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="signUp-btn-jenForm btn btn-sm d-none d-lg-block" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasSignupJenform"
+                            aria-labelledby="signupJenformLabel">
+                            Kaydol
+                        </button>
+                        <button class="signUp-btn-icon-jenForm btn btn-sm rounded-circle d-lg-none" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasSignupJenform"
+                            aria-labelledby="signupJenformLabel">
+                            <span><i class="bi bi-person-plus"></i></span>
+                        </button>
+                        <div class="offcanvas-signUp-jenform offcanvas offcanvas-end" tabindex="-1"
+                            id="offcanvasSignupJenform" aria-labelledby="signupJenformLabel">
+                            <div class="offcanvas-signUp-header-jenform offcanvas-header">
+                                <h6 class="offcanvas-signUp-title-jenform offcanvas-title" id="signupJenformLabel">
+                                    <span><i class="bi bi-person-plus"></i> Kaydol</span>
+                                </h6>
+                                <button type="button" class="btn-close rounded-circle" data-bs-dismiss="offcanvas"
+                                    aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="offcanvas-signUp-body-jenform offcanvas-body">
+                                <div class="signUp-body-jenform row rounded-2">
+                                    <div class="signUp-body-inline-jenform rounded-1 py-3">
+                                        <div class="signUp-body-img container col-4">
+                                            <img src="../assets/images/Jen-Form-logo.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="signUp-form-group-jenform container">
+                                            <div class="form-group">
+                                                <div class="row g-3 justify-content-between">
+                                                    <div class="col-12">
+                                                        <div class="form-floating">
+                                                            <input type="email" id="signupEmail" class="form-control"
+                                                                placeholder="E-posta adresi">
+                                                            <label for="signupEmail">
+                                                                E-posta adresi
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" id="signupName" class="form-control"
+                                                                placeholder="İsim">
+                                                            <label for="signupName">
+                                                                İsim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-floating">
+                                                            <input type="text" id="signupSirname" class="form-control"
+                                                                placeholder="Soyisim">
+                                                            <label for="signupSirname">
+                                                                Soyisim
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-floating">
+                                                            <input type="password" id="loginPassword"
+                                                                class="form-control" placeholder="Şifre">
+                                                            <label for="loginPassword">
+                                                                Şifre
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-1">
+                                                    <div class="col-12">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                role="checkbox" id="signuAgreementCheck" checked>
+                                                            <label class="signUp-check-label" for="signuAgreementCheck">
+                                                                <a href="">Bireysel Hesap Sözleşmesi ve Ekleri</a> 'ni
+                                                                kabul ediyorum.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                role="checkbox" id="signupContactCheck" checked>
+                                                            <label class="signUp-check-label" for="signupContactCheck">
+                                                                İletişim bilgilerime kampanya, tanıtım ve reklam
+                                                                içerikli ticari elektronik ileti gönderilmesine, bu
+                                                                amaçla kişisel verilerimin işlenmesine ve
+                                                                tedarikçilerinizle paylaşılmasına izin veriyorum.
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 d-grid">
+                                                        <button class="btn signUp-email-btn btn-sm" type="button">
+                                                            Hesap Aç
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-3">
+                                                    <div class="col-7">
+                                                        <span>
+                                                            Zaten hesabın var mı ?
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <a href="#">
+                                                            Giriş Yap<i class="bi bi-caret-right-fill"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="row g-0 mt-4">
+                                                        <div class="col-4">
+                                                            <hr>
+                                                        </div>
+                                                        <div class="col-4 mt-1">
+                                                            <span>VEYA</span>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-0 mt-3">
+                                                    <div class="col-12 d-grid mt-3">
+                                                        <button class="btn signUp-social-btn btn-sm" type="button">
+                                                            <img src="../assets/images/logo-google.png" alt=""
+                                                                height="18">
+                                                            Google ile hesap aç
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-12 d-grid mt-3">
+                                                        <button class="btn signUp-social-btn btn-sm" type="button">
+                                                            <img src="../assets/images/logo-apple.png" alt=""
+                                                                height="20">
+                                                            Apple ile hesap aç
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-12 mt-2">
+                                                        <p>
+                                                            Google veya Apple kimliğinizle bir sonraki adıma geçmeniz
+                                                            halinde
+                                                            <a href="">Bireysel Hesap Sözleşmesi ve Ekleri</a>'ni
+                                                            kabul etmiş sayılırsınız.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="signUp-body-footer-jenform row g-0">
+                                    <div class="col-12 ms-2">
+                                        <p>
+                                            Bu sayfadaki bilgiler jenform.com hesabı ve fatura gönderimi dahil olmak
+                                            üzere tüm bilgilendirmelerimiz için alınmaktadır. Tarafınızca sağlanmış olan
+                                            kişisel verileriniz hesap açma esnasında kimlik doğrulama tercihinize bağlı
+                                            olarak Google veya Apple vasıtasıyla işlenebilecektir. Kişisel verilerin
+                                            korunması hakkında detaylı bilgiye <a href="">buradan</a> ulaşabilirsiniz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="sectionTopJenForm" class="container">
+            <div class="section-top-jenform row g-0">
+                <div class="manifest-container-outer col-8 col-sm-7 col-md-5 col-lg-4 col-xxl-3 rounded-pill">
+                    <div class="manifest-container-inner container rounded-pill">
+                        <span>Jeneratör Ticaret Platformu</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main id="mainJenForm" class="container-fluid">
+            <div class="main-jenform">
+                <div class="row">
+                    <div class="main-top-jenform col-8 col-sm-5 col-md-4 col-xl-3 col-xxl-2">
+                        <a href="jenerator-al.html" class="container-outer container rounded-3">
+                            <div class="container-inner rounded-3">
+                                <div class="container-inner-title">
+                                    <h6>Jeneratör Al</h6>
+                                </div>
+                                <div class="container-inner-icon mt-4">
+                                    <span><i class="bi bi-buy-icon-jenform"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-top-jenform col-8 col-sm-5 col-md-4 col-xl-3 col-xxl-2 mt-5 mt-sm-0">
+                        <a href="jenerator-sat.html" class="container-outer container rounded-3">
+                            <div class="container-inner rounded-3">
+                                <div class="container-inner-title">
+                                    <h6>Jeneratör Sat</h6>
+                                </div>
+                                <div class="container-inner-icon mt-4">
+                                    <span><i class="bi bi-sale-icon-jenform"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="main-bottom-jenform col-8 col-sm-5 col-md-4 col-xl-3 col-xxl-2">
+                        <a href="jenerator-kirala.html" class="container-outer container rounded-3">
+                            <div class="container-inner rounded-3">
+                                <div class="container-inner-title">
+                                    <h6>Jeneratör Kirala</h6>
+                                </div>
+                                <div class="container-inner-icon mt-4">
+                                    <span><i class="bi bi-rent-icon-jenform"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-bottom-jenform col-8 col-sm-5 col-md-4 col-xl-3 col-xxl-2 mt-5 mt-sm-0">
+                        <a href="jenerator-kiralik-ver.html" class="container-outer container rounded-3">
+                            <div class="container-inner rounded-3">
+                                <div class="container-inner-title">
+                                    <h6>Jeneratör Kiralık Ver</h6>
+                                </div>
+                                <div class="container-inner-icon mt-4">
+                                    <span><i class="bi bi-rentOut-icon-jenform"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footerJenForm" class="container small fixed-bottom">
+            <div class="footer-jenform row">
+                <div class="footer-jenform-all col-1">
+                    <button class="btn btn-footer-jenform" id="btnFooterJenform" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasFooterJenForm"
+                        aria-controls="offcanvasFooterJenForm" aria-label="Open Footer">
+                        <span><i class="bi bi-chevron-compact-up"></i></span>
+                    </button>
+                    <div class="offcanvas-footer-jenform offcanvas offcanvas-bottom" tabindex="-1"
+                        id="offcanvasFooterJenForm" aria-labelledby="offcanvasFooterJenFormLabel">
+                        <div class="offcanvas-footer-header offcanvas-header">
+                            <button type="button" class="offcanvas-footer-btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close Footer">
+                                <span><i class="bi bi-chevron-compact-down"></i></span>
+                            </button>
+                        </div>
+                        <div class="offcanvas-footer-body offcanvas-body">
+                            <div class="row g-0">
+                                <div class="footer-contact-jenform col-xl-3">
+                                    <h5>
+                                        <i class="bi bi-at"></i><span>İletişim Bilgileri</span>
+                                    </h5>
+                                    <div class="contact-jenform container text-xl-start">
+                                        <p>
+                                            <a href="tel:+905551234567" class="nav-link">
+                                                +90 555 123 45 67
+                                            </a>
+                                        </p>
+                                        <p><a href="tel:+905551234567" class="nav-link">
+                                                +90 555 123 45 68
+                                            </a>
+                                        </p>
+                                        <p>
+                                            <a href="mailto:example@jenform.com" class="nav-link">
+                                                info@jenform.com
+                                            </a>
+                                        </p>
+                                        <address>
+                                            Barış Manço Moda 81300, İstannbl.
+                                        </address>
+                                    </div>
+                                </div>
+                                <div class="footer-links-jenform col-xl-5">
+                                    <h5>
+                                        <i class="bi bi-link"></i><span>Hızlı Linkler</span>
+                                    </h5>
+                                    <div class="links-jenform row text-xl-start ps-xl-1 ps-xxl-4">
+                                        <div class="col-10 col-xl-2">
+                                            <ul>
+                                                <li><a href="#" class="nav-link">Anasayfa</a></li>
+                                                <li><a href="#" class="nav-link">Hakkımızda</a></li>
+                                                <li><a href="#" class="nav-link">İletişim</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-10 col-xl-2">
+                                            <ul>
+                                                <li><a href="#" class="nav-link">Al</a></li>
+                                                <li><a href="#" class="nav-link">Sat</a></li>
+                                                <li><a href="#" class="nav-link">Kiralık Al</a></li>
+                                                <li><a href="#" class="nav-link">Kiralık Ver</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-10 col-xl-2">
+                                            <ul>
+                                                <li><a href="#" class="nav-link">Perkins</a></li>
+                                                <li><a href="#" class="nav-link">Baudouin</a></li>
+                                                <li><a href="#" class="nav-link">Mitsubishi</a></li>
+                                                <li><a href="#" class="nav-link">Cummins</a></li>
+                                                <li><a href="#" class="nav-link">Sdec</a></li>
+                                                <li><a href="#" class="nav-link">Quanchai</a></li>
+                                                <li><a href="#" class="nav-link">Yanmar</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-10 col-xl-2">
+                                            <ul>
+                                                <li><a href="#" class="nav-link">Linz</a></li>
+                                                <li><a href="#" class="nav-link">Stamford</a></li>
+                                                <li><a href="#" class="nav-link">Nekra</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-10 col-xl-2">
+                                            <ul>
+                                                <li><a href="#" class="nav-link">Panel</a></li>
+                                                <li><a href="#" class="nav-link">İnvertör</a></li>
+                                                <li><a href="#" class="nav-link">Akü</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-social-jenform col-xl-3">
+                                    <h5>
+                                        <i class="bi bi-bookmark-plus"></i><span>Bizi Takip Edin</span>
+                                    </h5>
+                                    <div class="social-jenform container text-start">
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="nav-link">
+                                                    <i class="bi bi-instagram"></i><span>Instagram</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link">
+                                                    <i class="bi bi-facebook"></i><span>Facebook</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link">
+                                                    <i class="bi bi-twitter-x"></i><span>X (Twitter)</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="nav-link">
+                                                    <i class="bi bi-linkedin"></i><span>Linkedin</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="footer-underside col-10 border-opacity-75">
+                                        <p>
+                                            <span style="color: #ff0029;">&copy;</span> 2024<span
+                                                class="jenform-ttf">Jen-Form</span>. Tüm Hakları Saklıdır.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
